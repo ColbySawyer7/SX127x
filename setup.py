@@ -8,7 +8,7 @@ setup(
   author = 'Colby Sawyer',                   # Type in your name
   author_email = 'sawyerco21@ecu.edu',      # Type in your E-Mail
   url = 'https://github.com/ColbySawyer7/SX127x.git',   # Provide either the link to your github or to your website
-  download_url = 'https://github.com/ColbySawyer7/LoRaPy/archive/refs/tags/v_0.3.tar.gz',    # I explain this later on
+  download_url = 'https://github.com/ColbySawyer7/SX127x/archive/refs/tags/v_0.1.tar.gz',    # I explain this later on
   keywords = ['LoRaWAN', 'Lora', 'Things Network', 'TTN', 'v3'],   # Keywords that define your package best
   install_requires=[            # I get to this in a second
           'RPi.GPIO',
