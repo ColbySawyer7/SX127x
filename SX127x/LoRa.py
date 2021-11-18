@@ -81,12 +81,12 @@ class LoRa(object):
     verbose = True
     dio_mapping = [None] * 6          # store the dio mapping here
 
-    def __init__(self, verbose=True, do_calibration=True, calibration_freq=868):
+    def __init__(self, verbose=True, do_calibration=True, calibration_freq=902.7):
         """ Init the object
         
         Send the device to sleep, read all registers, and do the calibration (if do_calibration=True)
         :param verbose: Set the verbosity True/False
-        :param calibration_freq: call rx_chain_calibration with this parameter. Default is 868
+        :param calibration_freq: call rx_chain_calibration with this parameter. Default is 902.7
         :param do_calibration: Call rx_chain_calibration, default is True.
         """
         self.verbose = verbose
@@ -825,7 +825,7 @@ class LoRa(object):
         """
         return 0x87 if pa_dac else 0x84
 
-    def rx_chain_calibration(self, freq=868.):
+    def rx_chain_calibration(self, freq=902.7):
         """ Run the image calibration (see Semtech documentation section 4.2.3.8)
         :param freq: Frequency for the HF calibration
         :return: None
