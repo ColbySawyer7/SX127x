@@ -21,8 +21,8 @@
 
 
 import sys
-from .constants import *
-from .board_config_ada import BOARD
+from SX127x.constants import *
+from SX127x.board_config_ada import BOARD
 
 
 ################################################## Some utility functions ##############################################
